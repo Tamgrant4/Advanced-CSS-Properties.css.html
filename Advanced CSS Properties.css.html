@@ -1,0 +1,95 @@
+Assignment 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA Background</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-fade">
+        This div has a semi-transparent background.
+    </div>
+</body>
+</html>
+
+.background-fade {
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity */
+    padding: 20px;
+    margin: 20px;
+}
+
+Task 2
+
+<h1 class="enhanced-text">Enhanced Header Text</h1>
+
+.enhanced-text {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Black shadow with 50% opacity */
+}
+
+task3
+
+<button class="interactive-button">Hover Me!</button>
+
+.interactive-button {
+    background-color: rgba(0, 128, 0, 0.8); /* Green with 80% opacity */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interactive-button:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Red with 80% opacity */
+}
+
+Assignment 2
+
+<a href="#" class="smooth-link">Hover over this link</a>
+
+.smooth-link {
+    color: blue;
+    transition: color 0.3s ease;
+}
+
+.smooth-link:hover {
+    color: red;
+}
+
+Task 2
+
+<button class="animated-button">Click Me!</button>
+
+.animated-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.animated-button:active {
+    transform: scale(1.1);
+}
+
+Task 3
+
+<img src="icon.png" class="rotating-icon" alt="Rotating Icon">
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-icon {
+    animation: rotation 5s linear infinite;
+}
